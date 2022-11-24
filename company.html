@@ -11,8 +11,46 @@
     <!-- defer 속성은 script가 잠깐 지연 되도록 하여 -->
     <!-- HTML 구문 분석이 완료된 후 스크립트를 실행하도록 함 -->
     <script src="javascript/script.js" defer type="text/javascript"></script>
+    <style type="text/css">
+        #tubular-shield{
+            width: 0px !important;
+            height: 0px !important;
+        }
+        #tubular-container{
+            width: 887px !important;
+            height: 500px !important;
+            position: absolute !important;
+            top: 200px !important;
+            left: 500px !important;
+         
+        }
+       #tubular-player{
+        width: 887px !important;
+        height:500px !important;
+        position: absolute !important;
+        /* transform: translate(100px , -200px) !important; */
+      
+        
+
+       }
+    </style>
 </head>
 <body>
+
+    <script src="javascript/jquery-2.2.4.min.js"></script>
+    <script src="javascript/jquery.tubular.1.0.js"></script>
+    <script>
+        $(document).ready(function() {
+                var options = { videoId: 'kWSHdixzMco', mute:true};
+                $(".tubular").tubular(options);
+                
+                // f-UGhWj1xww cool sepia hd
+                // 49SKbS7Xwf4 beautiful barn sepia
+        });
+    </script>
+
+
+
     <div class="wrapper">
         <header>
             <!-- .top은 .logo와 .menu를 묶어줌 -->
@@ -58,11 +96,17 @@
                 </nav>
             </div>
         </header>
-    
         
+
        
+
         <div class="introduce">
+            
             <div class="intro_t"><h1>회사소개</h1></div>
+            
+
+            <div class="tubular">
+            </div>
                 <div class="intro_body">
                 남율건설의 홈페이지를 찾아주신 여러분.<br>
                 인터넷을 통해 여러분을 만날 수 있게 되어 반갑습니다.<br><br>

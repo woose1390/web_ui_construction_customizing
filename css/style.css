@@ -680,15 +680,22 @@ th{
 
 
 /* 아래부터 company.html 의 CSS부분입니다. */
-wrap_body{
+/* .wrap_body{
     width: 500px;
-}
+} */
 .introduce{
     text-align: center;
+    position: relative !important;
 }
 
+.tubular{
+    position: absolute !important;
+}
 .intro_t > h1{
     margin: 50px auto;
+    margin-bottom: 500px;
+  
+    
 }
 
 .intro_good{
@@ -696,11 +703,6 @@ wrap_body{
     display: inline-block;
     font-weight: bold;
 }
-.tubular_space{
-    width: 300px;
-    height: 200px;
-}
-
 
 #ms1{
     background-image: url('images/archi1.jpg');
@@ -725,4 +727,6 @@ wrap_body{
   
    
 }
+
+
 
